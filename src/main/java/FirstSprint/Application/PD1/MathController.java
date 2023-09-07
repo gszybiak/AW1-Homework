@@ -1,4 +1,4 @@
-package FirstSprint.Application;
+package firstSprint.application.pd1;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

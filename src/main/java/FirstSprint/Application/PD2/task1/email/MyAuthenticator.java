@@ -1,4 +1,4 @@
-package FirstSprint.Application.email;
+package firstSprint.application.pd2.task1.email;
 
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
