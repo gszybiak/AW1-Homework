@@ -4,9 +4,9 @@ import firstSprint.application.pd2.task1.email.SendEmail;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
+import java.awt.Toolkit;
 
 
 @RequestMapping("/api")
@@ -58,10 +58,9 @@ public class ApiController {
     }
 
     @PostMapping("/clipboard/save")
+    @ResponseBody
     public String saveToClipboard(@RequestBody String json) {
-        StringSelection selection = new StringSelection(json);
-        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-        clipboard.setContents(selection, selection);
+        System.out.println(json);
         return "Zapisano tekst w schowku: " + json;
     }
 
