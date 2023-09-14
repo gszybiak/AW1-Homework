@@ -1,4 +1,4 @@
-package FirstSprint.Application;
+package firstSprint.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
